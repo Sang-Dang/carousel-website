@@ -1,0 +1,11 @@
+:root {
+    --background-color: #040915;
+}
+
+body {
+    background-color: var(--background-color);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
