@@ -1,5 +1,6 @@
 :root {
     --background-color: #040915;
+    --border-color: rgba(255,255,255,0.1);
 }
 
 body {
@@ -8,4 +9,18 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border: 1px solid var(--border-color);
+}
+
+nav > .nav-section {
+    padding: 3rem 2rem;
+    display: flex;
+    border-left: 1px solid var(--border-color);
 }
