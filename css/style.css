@@ -3,6 +3,11 @@
     --border-color: rgba(255,255,255,0.1);
 }
 
+* {
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
 body {
     background-color: var(--background-color);
     height: 100vh;
@@ -23,4 +28,33 @@ nav > .nav-section {
     padding: 3rem 2rem;
     display: flex;
     border-left: 1px solid var(--border-color);
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-section > a {
+    color: rgba(255, 255, 255, 0.36);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-section > a:hover {
+    color: white;
+}
+
+#nav-logo, #nav-link {
+    flex-basis: calc(100% / 3);
+}
+
+#nav-social, #nav-contact {
+    flex-basis: calc(100% / 6);
+}
+
+#nav-logo {
+    justify-content: flex-start;
+}
+
+#nav-logo > a > i {
+    font-size: 2.5rem;
 }
